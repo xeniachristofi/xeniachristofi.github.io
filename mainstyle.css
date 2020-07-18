@@ -15,16 +15,18 @@ body img{
     font-family: 'Josefin Sans', sans-serif;
     color:#cc4757;
     font-size: 3em;
-
 }
+
 #xenia {
    font-family: 'DM Serif Display', serif;
     color: #ff5057; 
     font-size: 10em; 
+    animation: fadeEffect 3s; 
            
 }
 #home{
     height: 45vh;
+     position: relative;
 }
 
 #name{
@@ -66,7 +68,15 @@ nav a:hover{
     font-size: 1.2em;
     color: #823;
     padding: 2em;
+    position: relative;
+  
 }
+
+@keyframes fadeEffect { /* from 0 to full opacity */
+   from {opacity: 0;}
+   to {opacity: 1;}
+}
+
 #about a, #about a:visited{
     color: #c70039;
     border: none;
