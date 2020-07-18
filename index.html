@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Xenia Christofi</title>
+	 <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- bootstrap -->
+	<link href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Josefin+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!----------------------scripts ------------------------------------->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+  <script src="contact.js"></script>
+<!--	fa icons-->
+<script src="https://kit.fontawesome.com/2f7ecfb904.js"></script>
+ 
+	<!-- my css -->
+	<link rel="stylesheet" type="text/css" href="mainstyle.css">
+</head>
+<body>
+<!------------------------ navbar ------------------------------------------>
+<nav class="navbar navbar-expand-lg fixed-top">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"> <i class="fas fa-chevron-circle-down"></i></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link scroll-link" href="#">home</a>
+      <a class="nav-item nav-link" href="#about">about me</a>
+      <a class="nav-item nav-link" href="#skills">my skills</a>
+      <a class="nav-item nav-link" href="#contact">contact</a>
+    </div>
+    <div class="navbar-nav ml-auto"> 
+    <a class="nav-item nav-link" href="https://github.com/xeniachristofi"> My GitHub</a>
+    </div>
+  </div>
+</nav>
+<!---------------------------------- home ------------------------------>
+<div id="home">
+<!--my name-->
+<div id="name">
+<div id="hi">hi, i'm</div>
+<div id="xenia">Xenia</div>
+<!-- insert cute pic here -->
+</div>
+</div>
+<!-----------------------------about me----------------------------------->
+<hr />
+<div id="about">
+<h1>about me</h1>
+<p>Hi, I'm <strong>Xenia</strong>, a penultimate-year BSC Computer Science student at the University of Surrey. I'm currently <strong>exploring all areas </strong>of the discipline; I have previous front-end web development experience but I am looking to expand my experience in areas such as cybersecurity, back-end web development, and mobile app development. <br /> </p>
+
+<p>
+I was introduced to the concept of programming when my friend introduced me to Scratch as a 9 year old. I learned HTML thanks to the children’s site Neopets shortly after and from then on I started looking further into web development. I undertook work experience at a local digital marketing agency where I had an in-depth insight into web technologies such as PHP + MySQL to integrate a back-end and a brief overview of JavaScript and Angular for fluid, dynamic sites. </p>
+</div>
+<div id="skills">
+<h1>my skills</h1>
+
+   <div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <h2>programming</h2>
+      <ul class="fa-ul">
+          <li><i class="fas fa-code fa-li"></i><strong>Web:</strong> PHP, MySQL, JavaScript</li>
+          <li><i class="fas fa-cube fa-li"></i><strong>Object-oriented:</strong> Java</li>
+          <li><i class="fas fa-tachometer-alt fa-li"></i><strong>Some experience:</strong> C/C#, Python, Angular, Sass/SCSS</li>
+      </ul>
+    </div>
+    <div class="col-sm">
+      <h2>creative</h2>
+      <ul class="fa-ul">
+          <li><i class="far fa-file-image fa-li"></i> <strong>Photoshop:</strong> intermediate proficiency</li>
+          <li><i class="fas fa-crop fa-li"></i><strong>Illustrator:</strong> basic proficiency</li>
+      </ul>
+    </div>
+    <div class="col-sm">
+      <h2>hobbies</h2>
+      <ul class="fa-ul">
+          <li><i class="fas fa-guitar fa-li"></i> Playing rock/metal and jazz guitar</li>
+          <li><i class="fas fa-ticket-alt fa-li"></i>Seeing concerts and live music</li>
+          <li><i class="fas fa-utensils fa-li"> </i>Cooking and baking</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+<!--------------------------------contact------------------------------------>
+<hr />
+   <div id = "contact">
+    <h1>contact me</h1>
+    <form id = "contact-form" method="post" action="contact.php">
+  <div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" class="form-control" id="email" name = "email" placeholder="Enter email" required>
+  </div>
+  <div class="form-group">
+    <label for="fullname">Name</label>
+    <input type="text" class="form-control" id="fullname" name = "fullname" placeholder="Enter full name here" required >
+  </div>
+  <div class="form-group">
+    <label for="message">Message</label>
+    <br />
+   <textarea id="message" class="text" rows ="10" name="message" placeholder="Your message" form="contact-form" required></textarea>
+  </div>
+ <div class="form-group">
+<div class="g-recaptcha" data-sitekey="6Lc6UK4UAAAAANXz3iFFBA9_oalfYlFI8heWeK7b" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+<input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+<div class="help-block with-errors"></div>
+                        </div>
+  <button type="submit" class="btn">Submit</button>
+  <div class="messages"> </div>
+</form>
+</div>
+<footer> Website created by Xenia Christofi, using <a href="https://getbootstrap.com/">Bootstrap</a>, icons from <a href="https://fontawesome.com">FontAwesome</a>, and typography from <a href="https://fonts.google.com">Google Fonts</a>.</footer>
+ 
+
+<!-- bootstrap scripts -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+
+body{
+    font-family: "PT Sans", sans-serif;
+    background-color: #DADBBD;
+}
+
+.george{
+    background-color: #41a6a6;
+    padding: 2em;
+    margin-top: 5%;
+}
+a, a:visited, a:active{
+    color: #aee6d1;
+}
+a:hover{
+    color: #24756B;
+    text-decoration: none;
+}
+.george2{
+    background-color: #9188F2;
+    padding: 2em;
+    margin-top: 5%;
+}
+.george2 a, a:visited, a:active{
+    color:#574194;
+}
+.george2 a:hover{
+    color: #3c2d66;
+    text-decoration: none;
+}
+.george h2{
+    color: #AEE6D1;
+}
+.xenia{
+    background-color: #FF5180;
+    padding: 2em;
+    margin-top: 5%;   
+}
+.xenia a, a:visited, a:active{
+    color:#AD2454;
+}
+.xenia a:hover{
+    color: #FF8B7D;
+}
+
