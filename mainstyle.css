@@ -1,0 +1,149 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+	background: #ffb2ad;
+    font-family: 'Josefin Sans', sans-serif;
+   
+}
+body img{
+	display: block;
+	margin: 0 auto;
+    
+}
+#hi {
+    font-family: 'Josefin Sans', sans-serif;
+    color:#cc4757;
+    font-size: 3em;
+}
+
+#xenia {
+   font-family: 'DM Serif Display', serif;
+    color: #ff5057; 
+    font-size: 10em; 
+    animation: fadeEffect 3s; 
+           
+}
+#home{
+    height: 45vh;
+     position: relative;
+}
+
+#name{
+    margin-top: 25%;
+    line-height: 0.7;
+}
+h1{
+    font-family: 'DM Serif Display', serif;
+    color: #cc4757;
+     padding: 0.5em 2em 0 2em;
+    font-size: 2.4em;
+
+}
+p{
+     padding: 0.5em 2em;
+}
+nav{
+    background-color:#823233;
+    color: #ffb079;
+}
+nav .fas{
+    color: #ffb079;
+}
+nav a, nav a:visited{
+    color: #ff8079;
+    border: none;
+}
+button:focus, .button:active {
+    outline: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+nav a:hover{
+    color: #ff5057;
+}
+
+#about{
+    background: #ff8079;
+    font-size: 1.2em;
+    color: #823;
+    padding: 2em;
+    position: relative;
+  
+}
+
+@keyframes fadeEffect { /* from 0 to full opacity */
+   from {opacity: 0;}
+   to {opacity: 1;}
+}
+
+#about a, #about a:visited{
+    color: #c70039;
+    border: none;
+    text-align:center;
+}
+#about a:hover, footer a:hover{
+    color: #ffb2ad;
+}
+hr{
+    height: 1em;
+    background-color: #823;
+    margin:0;
+}
+strong{
+    color: #823;
+}
+
+h2{
+    font-family: 'DM Serif Display', serif;
+    color: #823; 
+    text-align: center;
+    text-shadow: 1px 0.5px #ff5057;
+    
+}
+#skills{
+    color:#823;
+    padding: 2em;
+}
+#skills h1{
+    color:#ff5057;
+}
+#contact{
+    text-align: center;
+    background-color: #cc4757;
+    padding: 2em;
+}
+#contact h1{
+    color: #ff8079;
+}
+label{
+    color: #ffb2ad;
+}
+form{
+    text-align: center;
+    margin: 0 25vw;
+    width: 50vw;
+}
+input{
+    background-color: #ffb2ad!important;
+}
+textarea{
+    padding: 0.5em;
+    width: 50vw; 
+    background-color: #ffb2ad!important;
+    color: #212529;
+}
+.btn {
+    background-color: #823;
+    color: #ff5057;
+    font-family: "DM Serif Display", serif;
+}
+footer{
+    background-color: #823;
+    color: #ff8079;
+    padding: 1em;
+    text-align: center;
+}
+footer a, footer a:visited{
+    color: #ff5057;
+}
