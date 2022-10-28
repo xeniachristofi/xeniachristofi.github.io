@@ -71,6 +71,9 @@ nav a:hover{
     position: relative;
   
 }
+#about h1{
+    color: #882233;
+}
 
 @keyframes fadeEffect { /* from 0 to full opacity */
    from {opacity: 0;}
