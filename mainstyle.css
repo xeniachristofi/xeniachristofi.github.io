@@ -2,7 +2,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-	background: #ffb2ad;
+	background: #fad6d3;
     font-family: 'Josefin Sans', sans-serif;
    
 }
@@ -21,7 +21,7 @@ body img{
    font-family: 'DM Serif Display', serif;
     color: #ff5057; 
     font-size: 10em; 
-    animation: fadeEffect 3s; 
+    animation: fadeEffect 1s; 
            
 }
 #home{
@@ -51,7 +51,7 @@ nav .fas{
     color: #ffb079;
 }
 nav a, nav a:visited{
-    color: #ff8079;
+    color: #ffa9a4;
     border: none;
 }
 button:focus, .button:active {
@@ -64,7 +64,7 @@ nav a:hover{
 }
 
 #about{
-    background: #ff8079;
+    background: #ffa9a4;
     font-size: 1.2em;
     color: #882233;
     padding: 2em;
