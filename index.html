@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Xenia Christofi</title>
-	 <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- bootstrap -->
-	<link href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Josefin+Sans&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<title>Xenia Christofi</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- bootstrap -->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <!----------------------scripts ------------------------------------->
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<!--	fa icons-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/MotionPathPlugin.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=DM+Serif+Text|DM+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://kit.fontawesome.com/2f7ecfb904.js" crossorigin="anonymous"></script>
- 
 <!-- my css -->
 <link rel="stylesheet" type="text/css" href="mainstyle.css">
 </head>
-<body>
+<body class = "body">
 <!------------------------ navbar ------------------------------------------>
 <nav class="navbar navbar-expand-lg fixed-top">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,6 +28,7 @@
       <a class="nav-item nav-link scroll-link" href="#">home</a>
       <a class="nav-item nav-link" href="#about">about me</a>
       <a class="nav-item nav-link" href="#skills">my skills</a>
+      <a class="nav-item nav-link" href="#contact">contact</a>
     </div>
     <div class="navbar-nav ml-auto"> 
      <a class="nav-item nav-link" href="https://www.linkedin.com/in/xenia-christofi"><i class="fa fa-2x fa-linkedin-square" title = "LinkedIn"></i></a>
@@ -36,58 +39,52 @@
 <div id="home">
 <!--my name-->
 <div id="name">
-<div id="hi">hi, i'm</div>
-<div id="xenia">Xenia</div>
-</div>
-</div>
-<!-----------------------------about me----------------------------------->
-<hr />
-<div id="about">
-<h1>about me</h1>
-<p>Hi, I'm <strong>Xenia</strong>, a software engineer and recent BSc Computer Science graduate from the University of Surrey. I mostly work with Angular, as a 
-	developer involved in upgrading to a microfrontend architecture, 
-	but I have worked with C# as a full stack developer focusing on bug fixes and product improvements. <br /> </p>
-
-<p>
-I was introduced to the concept of programming when my friend introduced me to Scratch as a 9 year old. I learned HTML thanks to the children’s site Neopets shortly after and from then on I started looking further into web development. 
-	I undertook work experience at a local digital marketing agency where I had an in-depth insight into web technologies such as PHP + MySQL to integrate a back-end and a brief overview of JavaScript 
-	and Angular for fluid, dynamic sites. I also did a placement year as part of my degree working as a software engineer, which introduced me to the Agile development
-	methodology, and working with C# and Angular as well as automated testing frameworks including NUnit, Moq, Jasmine and Selenium. </p>
-</div>
-<div id="skills">
-<h1>my skills</h1>
-
-   <div class="container">
-  <div class="row">
-    <div class="col-sm">
-      <h2>programming</h2>
-      <ul class="fa-ul">
-          <li><i class="fas fa-code fa-li"></i><strong>Languages and frameworks:</strong> Angular, C#, Typescript, HTML, Sass/SCSS </li>
-          <li><i class="fas fa-tachometer-alt fa-li"></i><strong>Some experience:</strong> Python, Ruby on Rails, R</li>
-      </ul>
-    </div>
-    <div class="col-sm">
-      <h2>creative</h2>
-      <ul class="fa-ul">
-	  <li><i class="far fa-figma fa-li fa-brands"></i> <strong>Figma:</strong> intermediate proficiency</li>
-          <li><i class="far fa-file-image fa-li"></i> <strong>Photoshop:</strong> intermediate proficiency</li>
-          <li><i class="fas fa-crop fa-li"></i><strong>Illustrator:</strong> basic proficiency</li>
-      </ul>
-    </div>
-    <div class="col-sm">
-      <h2>hobbies</h2>
-      <ul class="fa-ul">
-          <li><i class="fas fa-ticket-alt fa-li"></i>Seeing concerts and live music</li>
-	  <li><i class="fas fa-tshirt fa-li"></i> Sewing, dressmaking and embroidery</li>
-          <li><i class="fas fa-cookie-bite fa-li"></i>Cooking and baking</li>
-      </ul>
-    </div>
+<span id="hi">Hi, i'm <span id="xenia">Xenia</span>
+    <div class ="typing-container">
+    <span class="typed-text"></span><span class="cursor">&nbsp;</span>
   </div>
 </div>
 </div>
+<!-----------------------------about me----------------------------------->
+<div id="about">
+<h1>about me</h1>
+<p>Hi, I'm <strong>Xenia</strong>, a software engineer and UX developer. I mostly work with Angular, as a 
+	developer involved in migrating to a microfrontend architecture, 
+	but I also have full stack experience with C# and .NET.  <br /> I love learning new things and expanding my skillset, so I find development incredibly rewarding.</p>
 
-<footer> Website created by Xenia Christofi, using <a href="https://getbootstrap.com/">Bootstrap</a>, icons from <a href="https://fontawesome.com">FontAwesome</a>, and typography from <a href="https://fonts.google.com">Google Fonts</a>.</footer>
- 
+<p> As well as development, I work with UX teams to validate, test and build products which are a joy to use. I'm currently pursuing <a href = "https://www.nngroup.com/ux-certification/"> UX certification</a> via Nielsen Norman Group to build these skills and educate other developers on UX principles. </p>
+  
+  <p> Outside of work, I enjoy live music and events, sewing and embroidery, and baking. If I'm not at a show or making my own clothes, you'll find me talking about sharks, cheesy movies and Nintendo DS games.</p>
+  
+</div>
+<div id="skills">
+   <div class="container">
+     <h1>my skills</h1>
+  <div class="row">
+    <div class="col-md">
+      <h2>programming</h2>
+      <ul class="fa-ul">
+          <li><i class="fas fa-code fa-li"></i><strong>Languages and frameworks:</strong> Angular, Typescript, C#, .NET, SQL, HTML, Sass/SCSS </li>
+          <li><i class="fas fa-hammer fa-li"></i><strong>Tools: </strong> Git, Figma, Illustrator, Photoshop</li>
+          <li><i class="fas fa-tachometer-alt fa-li"></i><strong>Some experience:</strong> Python, Ruby on Rails, R</li>
+      </ul>
+    </div>
+       <div class="col-md">
+      <h2>awards and certificates </h2>
+      <ul class="fa-ul">
+          <li><i class="far fa-star fa-li"></i> <a href="https://www.linkedin.com/posts/xceptor_teamwork-success-recognition-ugcPost-7130607322904584193-sWQS?utm_source=share&utm_medium=member_desktop">Xceptional award</a> for achievement beyond expectations and positive mindset </li>
+	  <li><i class="far fa-star fa-li"></i> <a href="https://www.interaction-design.org/members/xenia-christofi">Interaction Design Foundation</a> certificates for HCI and usability </li>
+          <li><i class="far fa-star fa-li"></i>NN/g course certificates for design tradeoffs and effective ideation techniques </li>
+      </ul>
+    </div>
+</div>
+</div>
+</div>
+<div id="contact">
+  <h1>get in touch</h1>
+  <h3><a href=”mailto:xenia@xeniachristofi.com”> <i class = "fa fa-envelope"></i>
+    xenia@xeniachristofi.com</a></h3>
+</div>
 
 <!-- bootstrap scripts -->
 
