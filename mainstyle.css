@@ -1,58 +1,60 @@
+
 html{
-    scroll-behavior: smooth;
-}
-body{
-	background: #fad6d3;
-    font-family: 'Josefin Sans', sans-serif;
-   
-}
-body img{
-	display: block;
-	margin: 0 auto;
-    
-}
-#hi {
-    font-family: 'Josefin Sans', sans-serif;
-    color:#cc4757;
-    font-size: 3em;
+--color1: #fff7f7;
+--color2: #ad7a99;
+--color3: #474056;
+ scroll-behavior: smooth;
+  background: var(--color1);
 }
 
+.body {
+	background: var(--color1);
+    font-family: 'DM Sans', sans-serif;
+}
+
+#hi {
+    font-family: 'DM Serif Text', serif;
+    color: var(--color3);
+    font-size: 5em;
+}
 #xenia {
-   font-family: 'DM Serif Display', serif;
-    color: #ff5057; 
-    font-size: 10em; 
-    animation: fadeEffect 1s; 
-           
+   font-family: 'DM Serif Text', serif; 
+    color: var(--color2);  
 }
 #home{
-    height: 45vh;
-     position: relative;
+   height: 45vh;
+   position: relative;
+   background: none;
 }
 
 #name{
-    margin-top: 25%;
-    line-height: 0.7;
+  margin: 25%;
+  line-height: 0.85;
+  padding: 0 16px;
+  
 }
 h1{
-    font-family: 'DM Serif Display', serif;
-    color: #cc4757;
-     padding: 0.5em 2em 0 2em;
+    font-family: 'DM Serif Text', serif;
+    color: var(--color3);
+    padding: 0.5em 2em 0 2em;
     font-size: 2.4em;
+    text-align: center;
 
 }
-p{
+p {
      padding: 0.5em 2em;
 }
 nav{
-    background-color:#823233;
-    color: #ffb079;
+    background-color: var(--color2);
+    color: var(--color2);
 }
 nav .fas{
-    color: #ffb079;
+    color: var(--color1);
 }
 nav a, nav a:visited{
-    color: #ffa9a4;
+    color: var(--color1);
     border: none;
+  transition: ease-in-out 0.3s;
 }
 button:focus, .button:active {
     outline: none !important;
@@ -60,93 +62,86 @@ button:focus, .button:active {
     -webkit-box-shadow: none !important;
 }
 nav a:hover{
-    color: #ff5057;
+    color: var(--color3);
 }
-
+.typing-container {
+  padding-top: 20px;
+  font-size: 2em;
+}
+span.cursor {
+  display: inline-block;
+  background-color: var(--color2);
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
 #about{
-    background: #ffa9a4;
+    background: var(--color2);
     font-size: 1.2em;
-    color: #882233;
+    color: var(--color3);
     padding: 2em;
     position: relative;
-  
 }
 #about h1{
-    color: #882233;
+    color: var(--color1);
 }
-
-@keyframes fadeEffect { /* from 0 to full opacity */
-   from {opacity: 0;}
-   to {opacity: 1;}
+ #about a, #skills a {
+    color: inherit;
+    text-decoration: underline;
+     transition: ease-in-out 0.3s;    
 }
-
-#about a, #about a:visited{
-    color: #c70039;
-    border: none;
-    text-align:center;
-}
-#about a:hover, footer a:hover{
-    color: #ffb2ad;
-}
-hr{
-    height: 1em;
-    background-color: #823;
-    margin:0;
-}
-strong{
-    color: #823;
-}
+#about a:hover, #skills a:hover {
+      color: var(--color1);
+    }
 
 h2{
-    font-family: 'DM Serif Display', serif;
-    color: #823; 
-    text-align: center;
-    text-shadow: 1px 0.5px #ff5057;
-    
+    font-family: 'DM Serif Text', serif;
+    color: var(--color1); 
+    text-align: center; 
 }
 #skills{
-    color:#823;
-    padding: 2em;
+    color: var(--color1);
+    padding: 0.5em;
+    padding-top: 120px;
+    background: var(--color1);
 }
-#skills h1{
-    color:#ff5057;
+ #skills li {
+    padding: 4px 0;
+  }
+  
+  #skills .col-md {
+    background-color: var(--color2);
+    padding: 16px;
+    margin: 16px;
+    border-radius: 20px;
+    transition: ease-out 0.15s;
+  }
+ #skills h1, #skills h2{
+    color:var(--color3);
 }
+#skills .col-md a:hover {
+color: var(--color3);
+ }
 #contact{
     text-align: center;
-    background-color: #cc4757;
+    background-color: var(--color3);
     padding: 2em;
 }
 #contact h1{
-    color: #ff8079;
+    color: var(--color2);
 }
-label{
-    color: #ffb2ad;
+
+#contact a, #contact a:visited {
+    color: var(--color1);
+      transition: ease-out 0.15s;
 }
-form{
-    text-align: center;
-    margin: 0 25vw;
-    width: 50vw;
-}
-input{
-    background-color: #ffb2ad!important;
-}
-textarea{
-    padding: 0.5em;
-    width: 50vw; 
-    background-color: #ffb2ad!important;
-    color: #212529;
-}
-.btn {
-    background-color: #823;
-    color: #ff5057;
-    font-family: "DM Serif Display", serif;
-}
-footer{
-    background-color: #823;
-    color: #ffa9a4;
-    padding: 1em;
-    text-align: center;
-}
-footer a, footer a:visited{
-    color: #ff5057;
+ #contact a:hover {
+    color: var(--color2);
+  }
+a:hover {
+      color: var(--color3);
+    }
+@keyframes blink {
+  50% { background-color: transparent; }
+
 }
