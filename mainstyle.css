@@ -31,13 +31,13 @@ html{
   margin: 25%;
   line-height: 0.85;
   padding: 0 16px;
-  
+  text-align: center;
 }
 h1{
     font-family: 'DM Serif Text', serif;
     color: var(--color3);
     padding: 0.5em 2em 0 2em;
-    font-size: 2.4em;
+    font-size: 48px;
     text-align: center;
 
 }
@@ -79,7 +79,7 @@ span.cursor {
     background: var(--color2);
     font-size: 1.2em;
     color: var(--color3);
-    padding: 2em;
+    padding: 4em;
     position: relative;
 }
 #about h1{
